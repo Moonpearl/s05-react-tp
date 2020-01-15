@@ -1,0 +1,40 @@
+.NavButton {
+    position: relative;
+    padding: 0 1em;
+    z-index: 0;
+    transition: all .3s;
+
+    &.active  {
+        background-color: $colorBackground;
+        color: $colorText;
+        padding-left: 1.4em;
+
+        &:after {
+            width: .4em;
+        }
+    }
+
+    &:hover:not(.active) {
+        background-color: $colorNormal;
+    }
+
+    &:hover {
+        padding-left: 1.4em;
+
+        &:after {
+            width: .4em;
+        }
+    }
+
+    &:after {
+        content: '';
+        background-color: $colorText;
+        position: absolute;
+        z-index: -1;
+        width: 0;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: all .3s;
+    }
+}

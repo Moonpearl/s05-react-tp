@@ -1,0 +1,30 @@
+.Layout {
+    display: grid;
+    grid-template-columns: $widthSidebar 1fr;
+    background-color: #F0EEEB;
+    height: 100vh;
+
+    &-main {
+        overflow-y: scroll;
+        padding: 2em;
+    }
+}
+
+.Photo {
+    display: block;
+    max-width: 600px;
+    margin-bottom: 4em;
+}
+
+.Text {
+    font-size: 1.25em;
+    &-paragraph {
+        margin: 1em 0 0;
+    }
+}
+
+.MainTitle {
+    font-size: 2em;
+    margin-bottom: 2em;
+    font-family: $fontSpecial;
+}

@@ -1,0 +1,13 @@
+.Sidebar {
+    background-color: $colorDark;
+    color: $colorBackground;
+    font-size: $fontSizeSidebar;
+    line-height: $lineHeightSidebar;
+    font-family: $fontSpecial;;
+
+    &-sitename {
+        font-size: 1.5em;
+        line-height: calc(#{$lineHeightSidebar} * 1.5);
+        text-align: center;
+    }
+}
